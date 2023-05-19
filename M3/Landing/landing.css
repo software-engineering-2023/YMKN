@@ -1,0 +1,142 @@
+body{
+    background-color: black;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-left: 0%;
+    left: 0%;
+
+  }
+  
+
+  li {
+    border-right: 1px solid #bbb;
+    float: left;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    
+
+  }
+  
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .active{
+    background-color: white;
+    color: #111;
+}
+.pic{
+width: 600px;
+height: 400px;
+align-items: center;
+border-style: solid;
+border-color: white;
+border-radius: 400px;
+position: absolute;
+top: 15%;
+left: 37.5%;
+}
+
+
+.head{
+    color: white;
+    position: absolute;
+    top: 43%;
+    left: 47%;
+    font-size: 400%;
+    font-weight: bolder;
+
+}
+
+.text{
+color: white;
+position: absolute;
+    top: 52%;
+    left: 43%;
+    font-size: 200%;
+}
+
+button{
+    position: absolute;
+    top: 60%;
+    left: 45.5%;
+    width: 200px;
+    height: 100px;
+    font-size: x-large;
+    border-radius:50px ;
+    background-color: transparent;
+    color: white;
+    border-style: solid ;
+    border-color: white;
+  }
+  button:hover{
+background-color: white;
+color: #111;
+border-color: #111  ;
+  }
+.missionheader{
+    position: absolute;
+    top: 75%;
+    left: 68%;
+    width: 300px;
+    height: 100px;
+    color: white; 
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+}
+  .mission{
+    position: absolute;
+    top: 80%;
+    left: 67%;
+    width: 800px;
+    height: 100px;
+    color: white;
+    font-style: italic;
+    font-size: 33px;
+    
+
+  }
+
+  .visionheader{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    width: 300px;
+    height: 100px;
+    color: white; 
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .vision{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    width: 800px;
+    height: 100px;
+    color: white;
+    font-style: italic;
+    font-size: 33px;
+  }
