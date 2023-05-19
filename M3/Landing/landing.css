@@ -1,7 +1,16 @@
 body{
-    background-color: black;
-    
+    background-color: #88BDBC;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    margin: auto;
+    display: block;
 }
+body{
+  margin: 0;
+}
+
+
 
 ul {
     list-style-type: none;
@@ -32,7 +41,7 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     
 
   }
@@ -46,8 +55,8 @@ ul {
     color: #111;
 }
 .pic{
-width: 600px;
-height: 400px;
+width: 400px;
+height: 200px;
 align-items: center;
 border-style: solid;
 border-color: white;
@@ -61,7 +70,7 @@ left: 37.5%;
 .head{
     color: white;
     position: absolute;
-    top: 43%;
+    top: 35%;
     left: 47%;
     font-size: 400%;
     font-weight: bolder;
@@ -71,15 +80,15 @@ left: 37.5%;
 .text{
 color: white;
 position: absolute;
-    top: 52%;
-    left: 43%;
+    top: 48%;
+    left: 41%;
     font-size: 200%;
 }
 
 button{
     position: absolute;
-    top: 60%;
-    left: 45.5%;
+    top: 63%;
+    left: 44.5%;
     width: 200px;
     height: 100px;
     font-size: x-large;
@@ -90,9 +99,9 @@ button{
     border-color: white;
   }
   button:hover{
-background-color: white;
-color: #111;
-border-color: #111  ;
+background-color: black;
+color: white;
+border-color: white;
   }
 .missionheader{
     position: absolute;
@@ -102,18 +111,18 @@ border-color: #111  ;
     height: 100px;
     color: white; 
     font-style: italic;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }
   .mission{
     position: absolute;
     top: 80%;
     left: 67%;
-    width: 800px;
+    width: 30%;
     height: 100px;
     color: white;
     font-style: italic;
-    font-size: 33px;
+    font-size: 23px;
     
 
   }
@@ -126,7 +135,7 @@ border-color: #111  ;
     height: 100px;
     color: white; 
     font-style: italic;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
   }
 
@@ -134,9 +143,107 @@ border-color: #111  ;
     position: absolute;
     top: 80%;
     left: 5%;
-    width: 800px;
+    width: 30%;
     height: 100px;
     color: white;
     font-style: italic;
-    font-size: 33px;
+    font-size: 28px;
+  }
+
+  .logon{
+    position: absolute;
+    background-color: #111;
+    top: 35%;
+    left: 31%;
+    width: 40%;
+    height: 40%;
+    border-radius: 20px;
+    display: none;
+  }
+
+  .username{
+    position: absolute;
+    background-color: white;
+    top: 30%;
+    left: 31%;
+    width: 35%;
+    height: 11%;
+    border-radius: 20px;
+
+  }
+
+  .password{
+
+    position: absolute;
+    background-color: white;
+    top: 47%;
+    left: 31%;
+    width: 35%;
+    height: 11%;
+    border-radius: 20px;
+
+  }
+
+  .logintitle{
+    position: absolute;
+   color: white;
+    top: 10%;
+    left: 40%;
+    width: 30%;
+    height: 10%;
+    font-size: 200%;
+
+  }
+
+  .loginerror{
+    position: absolute;
+    color: white;
+     top: 62%;
+     left: 38%;
+     width: 30%;
+     height: 10%;
+     font-size: 100%;
+     font-weight: bolder;
+
+    
+  }
+
+  .cancelbutton{
+
+    position: absolute;
+    top: 73%;
+    left: 25.5%;
+    width: 20%;
+    height: 20%;
+  }
+  .cancelbutton:hover{
+
+    background-color: white;
+color: black;
+border-color: white;
+  }
+
+  
+  .loginbutton{
+    position: absolute;
+    top: 73%;
+    left: 55.5%;
+    width: 20%;
+    height: 20%;
+  }
+  .loginbutton:hover{
+
+    background-color: white;
+color: black;
+border-color: white;
+  }
+.blur{
+  
+}
+  .blur.active{
+
+  
+    filter: blur(30px);
+    pointer-events: none;
+    user-select: none;
   }
