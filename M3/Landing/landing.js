@@ -17,11 +17,12 @@ var login = () => {
   let password = document.getElementById("password").value;
 
   if (username === "client" && password === "client") {
-    window.location.href = "";
+    window.location.href = "../Client/index.html";
+  
   } else if (username === "banker" && password === "banker") {
-    window.location.href = "";
+    window.location.href = "../Banker/index.html";
   } else if (username === "admin" && password === "admin") {
-    window.location.href = "";
+    window.location.href = "../Admin/index.htm";
   } else {
     document.getElementById("loginerror").innerText = "Invalid Credentials!";
   }

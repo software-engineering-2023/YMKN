@@ -1,18 +1,18 @@
-var redeem = () => {
+ var redeem = () => {
 
 document.getElementById("points").innerText = "0 pts"
-document.getElementById("cash").innerText = "Total Amount:         $67,730"
+document.getElementById("cash").innerText = "7,730"
 
 } 
 
-var activateopen = () => {
+ var activateopen = () => {
 
     document.getElementById("openaccount").style.display = "block";
     let blur = document.getElementById("blur");
     blur.classList.toggle("active");
 }
 
-var deactivateopen = () => {
+ var deactivateopen = () => {
 
     document.getElementById("openaccount").style.display = "none";
     let blur = document.getElementById("blur");
@@ -26,14 +26,14 @@ var activateclose = () => {
     blur.classList.toggle("active");
 }
 
-var deactivateclose = () => {
+ var deactivateclose = () => {
 
     document.getElementById("closeaccount").style.display = "none";
     let blur = document.getElementById("blur");
     blur.classList.toggle("active");
 }
 
-var submit = (type) =>{
+ var submit = (type) =>{
 
    
 if (type === 'closeaccount') {
@@ -52,4 +52,17 @@ if (type === 'closeaccount') {
 }
 
 }
+
+
+
+ const fullcard = () => {
+    document.getElementById("cash").innerText = "10,000"
+}
+
+ const partialcard = (paidamount) => {
+let curramount = document.getElementById("cash").innerText
+
+    document.getElementById("cash").innerText = Number(curramount) + Number(paidamount)
+}
+
 
