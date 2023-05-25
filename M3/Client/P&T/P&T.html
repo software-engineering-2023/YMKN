@@ -125,32 +125,32 @@
 
 <div class="payments">
     <h3> Payments</h3>  
-    <input class="list" list="pay" id="bills">
-    <br>
+    <br><br><br>
     <div><br><strong>Utility Bill (Electricity)</strong>           <p id="electricity">Bill Amount: $130.99</p>  
        
-         </div><br><br><br><br>
+         </div><br><br><br>
         <div><br><strong>Utility Bill (Gas)</strong>            <p id="gas">Bill Amount: $59.99</p> 
 
         </div>
-        <br><br><br><br>
+        <br><br><br>
         <div><br><strong>Utility Bill (Water)</strong>           <p id="water">Bill Amount: $100</p> 
         
         </div>
      
        
-    <datalist  id="pay">
-        <option value="All" >
-      <option value="Gas">
-      <option value="Electricity">
-      <option value="Water">
+    <select  class="list" id="bills" style="position: absolute; top: 80%;">
+        <option value="Choose Bill" selected >Choose Bill</option>
+        <option value="All" >All</option>
+      <option value="Gas">Gas</option>
+      <option value="Electricity">Electricity</option>
+      <option value="Water">Water</option>
       
-    </datalist>
+      </select>
 
  
 
     <button class="button" onclick="pay()"> Pay</button>
-    <a class="paypal" href="http://paypal.com">Use Paypal?</a>
+    <a class="paypal" href="http://paypal.com" target="_blank">Use Paypal?</a>
 </div>
 
 <div class="transfers"> 

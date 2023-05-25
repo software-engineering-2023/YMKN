@@ -320,30 +320,33 @@ font-size: 85%;
   
   
     .loanmessage{
-      background-color: white;
+      background-color: #333;
       position: absolute;
       width: 45%;
-      height: 50%;
+      height: 45%;
       top: 50%;
       left: 0.5%;
-      
+      border-radius: 10px;
       font-family: 'Courier New', Courier, monospace;
-  border-right: 1px solid grey;
+  border-right: 1px solid white;
+  color: white;
       
     }
   
 
   .loanrequirements{
   
-      background-color: white;
+      background-color: #333;
       position: absolute;
       width: 45%;
-      height: 50%;
+      height: 45%;
       top: 50%;
-      left: 52%;
+      left: 48%;
       border-radius: 8px;
       font-family: 'Courier New', Courier, monospace;
       font-weight: lighter;
+      color: white;
+      
   
   }
   
