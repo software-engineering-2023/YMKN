@@ -58,7 +58,38 @@ const AcceptBL = () => {
     }
   }  
            
-  
+  const ViewRight = () =>{
+    let client4 = document.getElementById('open').value
+
+    if (!client4) {
+      return
+    }     
+    else if (client4 == '225563258, Ali') {
+
+    }
+    else if  (client4 = '122252522, hamada'){
+
+    }
+  }
+
+  const ViewLeft = () =>{
+    let client5 = document.getElementById('open').value
+
+    if (!client5) {
+      return
+    }     
+    else if (client5 == '125882522, Clara') {
+      document.getElementById("openaccount").style.display = "block";
+      let blur = document.getElementById("blur");
+      blur.classList.toggle("active");
+
+    }
+    else if  (client5 = '252132455, Nada'){
+
+    }
+
+  }
+    
         
       
             
