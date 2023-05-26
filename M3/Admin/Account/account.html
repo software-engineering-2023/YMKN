@@ -38,7 +38,7 @@
 
 <div class="remindersright">
     <h3> Close Accounts Requests</h3>  
-    <input class="list" list="clients">
+    <input class="list" list="clients" id = "close">
 
     <datalist  id="clients">
       <option value="122252522, hamada">
@@ -52,14 +52,15 @@
     <button class="RejectBR" onclick="RejectBR()">Reject</button>
 
     <strong>
-    </strong> <br>
-    <p id="AA"> Accepted Accounts: None</p>
-    <p id="RA"> Rejected Accounts: None</p> 
+   <br>
+    <p id="AAr"> Accepted Accounts --> None</p>
+    <p id="RAr"> Rejected Accounts --> None</p> 
+</strong>
 </div>
 
 <div class="remindersleft"> 
     <h3> Open Accounts Requests</h3>
-    <input class="list" list="clients2">
+    <input class="list" list="clients2" id = "open">
 
     <datalist  id="clients2">
       <option value="125882522, Clara">
@@ -72,8 +73,8 @@
     <button class="RejectBL" onclick="RejectBL()"> Reject </button>
     
     <strong> <br>
-        <p id="AA"> Accepted Accounts--> None</p>
-        <p id="RA"> Rejected Accounts--> None</p> 
+        <p id="AAl"> Accepted Accounts --> None</p>
+        <p id="RAl"> Rejected Accounts --> None</p> 
     </strong> 
     
 </div>
