@@ -27,63 +27,138 @@
    
 
 <div class="remindersright">
-    <h3> Close Accounts Requests</h3>  
+    <h3> Close Bankers Accounts </h3>  
     <input class="list" list="clients" id = "close">
 
     <datalist  id="clients">
       <option value="122252522, hamada">
       <option value="255212455, Ramy">
-      <option value="225563258, Ali">
-      <option value="115852522, Mariam">
+      <!-- <option value="225563258, Ali">
+      <option value="115852522, Mariam"> -->
     </datalist>
 
     
-    <button class="AcceptBR" onclick="AcceptBR()">Accept</button>
-    <button class="RejectBR" onclick="RejectBR()">Reject</button>
-    <button class="ViewRight" onclick="ViewRight()">View</button>
+    <button class="AcceptBR" onclick="AcceptBR()">Close Account</button>
+    <!-- <button class="RejectBR" onclick="RejectBR()">Reject</button> -->
+    <button class="ViewRight" onclick="ViewRight()">View Banker Information</button>
 
     <strong>
-   <br>
-    <p id="AAr"> Accepted Accounts --> None</p>
-    <p id="RAr"> Rejected Accounts --> None</p> 
+   <br>   <br>
+    <!-- <p id="AAr"> Accepted Accounts</p> -->
+        <!-- <p id="RAr"> Rejected Accounts </p>  -->
 </strong>
 </div>
 
 <div class="remindersleft"> 
-    <h3> Open Accounts Requests</h3>
-    <input class="list" list="clients2" id = "open">
+    <h3> Open Banker Accounts </h3>
+    <!-- <input class="list" list="clients2" id = "open">
 
     <datalist  id="clients2">
       <option value="125882522, Clara">
       <option value="252132455, Nada">
-      <option value="611213258, Nour">
+      <!-- <option value="611213258, Nour">
       <option value="116569525, Youssef">
-      <option value="111155852, Mustafa">
-    </datalist> 
-    <button class="AcceptBL" onclick="AcceptBL()"> Accept </button>
-    <button class="RejectBL" onclick="RejectBL()"> Reject </button>
-    <button class="ViewLeft" onclick="ViewLeft()">View</button>
+      <option value="111155852, Mustafa"> -->
+    <!-- </datalist> -->
+   <br><br><br><br><br><br> <label for="Account number" style = "color: white;"> &nbsp; </label>
+    <input type="text" id="name22" placeholder=" New Employee FullName*">
+
+    <br> <label for="Account number" style = "color: white;"> &nbsp; </label>
+    <input type="text" id="a" placeholder="Username*">
+    <br> <label for="Account number" style = "color: white;"> &nbsp; </label>
+    <input type="text" id="b" placeholder="Password*">
+    <br> <label for="Account number" style = "color: white;"> &nbsp; </label>
+    <input type="text" id="c" placeholder="Employee ID*">
+    <br> <label for="Account number" style = "color: white;"> &nbsp; </label>
+    <input type="text" id="d" placeholder="Employee Postion*">
+    <br> <label for="Account number" style = "color: white;"> &nbsp; </label>
+    <input type="text" id="e" placeholder="Email*">
+    <br> <label for="Account number" style = "color: white;"> &nbsp; </label>
+    <input type="text" id="f" placeholder="National_ID*">
+    
+
+    <button class="openacc" onclick="openacc()"> Open Account </button>
+    <!-- <button class="RejectBL" onclick="RejectBL()"> Reject </button> -->
+    <!-- <button class="ViewLeft" onclick="ViewLeft()">View</button> -->
 
     
-    <strong> <br>
-        <p id="AAl"> Accepted Accounts --> None</p>
-        <p id="RAl"> Rejected Accounts --> None</p> 
+    <strong>    <br>   <br>
+        <p id="AAl"></p>
+        <p id="AAL2"></p> 
     </strong> 
     
 </div>
 
 <div class="openaccount" id="openaccount">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Clara Zakria Khalil"><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="AasamST. new cairo"><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="Clarazakaria@ggmail.com" required><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="date" placeholder="04/11/2001"><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="125882522"><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="012589637"><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="Egyptian">
+    <strong>
+    <p id= "name" >Name: Clara Zakria Khalil </p>
+    <p id="adress">Adress: Fifth Statement, new cairo</p> 
+    <p id="mail" >Email: Clarazakaria@ggmmail.com</p>
+    <p id="date" >Date: 04/11/2001 </p>
+    <p id="NID">National ID: 125882522 </p>
+    <p id="Pnumber"> Phone Number: 012369857</p>
+    <p id="nationality"> Nationality: Egyptian </p>
+    <p id="type"> Type of the account: Saving Account</p>
+    <p id="salary"> Salary: 10,0000 Per Month</p>
+    <p id="Work"> Work place: Dell</p>
+    <p id="Note"> Banker Note: All information provided is correct</p>
     <label for="" class="confirmation" id="confirmation"> </label>
     <button class="submit" onclick="submit('openaccount')">close</button>
+</strong>
 </div>
 
+
+<div class="openaccount2" id="openaccount2">
+    <strong>
+    <p id= "name" >Name: Nada Nasr Mohamed </p>
+    <p id="adress">Adress: First Statement, new cairo</p> 
+    <p id="mail" >Email: Nada.nassrr@ggmmail.com</p>
+    <p id="date" >Date: 08/12/2001 </p>
+    <p id="NID">National ID: 232285554 </p>
+    <p id="Pnumber"> Phone Number: 01225838557</p>
+    <p id="nationality"> Nationality: Egyptian </p>
+    <p id="type"> Type of the account: Current Account</p>
+    <p id="salary"> Salary: 15,0000 PerMonth </p>
+    <p id="Work"> Work place: Microsoft</p>
+    <p id="Note"> Banker Note: SOURCE OF INCOME IS UNVERIFIED </p>
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit2" onclick="submit('openaccount2')">close</button>
+</strong>
+</div>
+
+
+<div class="closeaccount" id="closeaccount">
+    <strong>
+    <p id= "name" >Name: Ramy Nasr abdelmaged </p>
+    <p id= "uname" >UserName: Ramy_abdelmaged77 </p>
+    <p id= "pw" >Password: abdelmaged123555 </p>
+    <p id="adress">Employee ID: 12345689 </p> 
+    <p id="mail" >Employee Postion: Senior Relation Manager</p>
+    <p id="date" >Email: Ramy.abdelmaged@Bolt.com </p>
+    <p id="NID"> National_ID : 23228585514 </p>
+    <p id="type"> Loans: None</p>
+    <!-- <p id="Note"> Banker Note: SOURCE OF INCOME IS UNVERIFIED </p> -->
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit2" onclick="submit('closeaccount')">close</button>
+</strong>
+</div>
+
+
+<div class="closeaccount2" id="closeaccount2">
+    <strong>
+        <p id= "name" >Name: hamada ahmed eissa </p>
+        <p id= "uname" >UserName: Ramy_eissa202 </p>
+        <p id= "pw" >Password: hibye1235 </p>
+        <p id="adress">Employee ID: 12345002 </p> 
+        <p id="mail" >Employee Postion: Operation Manager</p>
+        <p id="date" >Email: hamda.eissa@Bolt.com </p>
+        <p id="NID"> National_ID: 3025585514 </p>
+        <p id="type"> Loans: None</p>
+        <!-- <p id="Note"> Banker Note: Unpaid Credit Card bills </p> -->
+    <label for="" class="confirmation" id="confirmation"> </label>
+    <button class="submit3" onclick="submit('closeaccount2')">close</button>
+</strong>
+</div>
 
 
 </div>
