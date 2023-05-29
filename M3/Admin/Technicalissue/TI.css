@@ -1,15 +1,8 @@
-body{
-  
-    background-image: url(/YMKN-Client/M3/Client/Assets/triangle-cyan.png);
-        margin: auto;
-        display: block;
-        margin:0; padding:0;
-    }
-    
+
     
     body{
   
-      background-image: url(/Client/Assets/triangle-cyan.png);
+      background-image: url(/M3/Client/Assets/triangle-cyan.png);
         width: 100%;
         margin: auto;
         display: block;
