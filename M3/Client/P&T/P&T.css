@@ -134,11 +134,11 @@ body{
   .notifications h3{
 
     position: absolute;
-    left: 20%;
+    left: 10%;
     color: white;
     border-radius: 10px;
     border: 2px solid white;
-    width: 60%;
+    width: 80%;
     text-align: center;
   }
   
