@@ -16,26 +16,33 @@
         <li><a href="../P&T/P&T.html">Payments & Transfers</a></li>
         <li><a href="../Loans/loans.html">Loans</a></li>
         <li><a href="../notifications/notifications.html">Notifications</a></li>
+        <li><a href="../Report/report.html">Report</a></li>
       </ul>
      
         <div class="openaccount" id="openaccount">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Full Name"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="Address"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="Email" required><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="date" placeholder="Date of Birth"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="ID Number"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="Phone Number"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="Nationality">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id ='a2' placeholder="Full Name*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id ='b2' placeholder="Address*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text"id = 'c2' placeholder="Email*" required><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="date" id ='d2' placeholder="Date of Birth*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text"id = 'e2' placeholder="ID Number*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'f' placeholder="Phone Number*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'g' placeholder="Nationality*">
+            <br><select  id="reason" style="position: absolute; left: 37%; width: 35%;">
+                <option value="Choose account type" selected> Account Type *</option>
+              <option value="Theft">current account</option>
+              <option value="Damaged">saving account</option>
+              <option value="Missing">certificates</option>
+              </select>
             <label for="" class="confirmation" id="confirmation"> </label>
             <button class="submit" onclick="submit('openaccount')">Submit</button>
             <button class="opencancel" onclick="deactivateopen()">Cancel</button>
         </div>
         <div class="closeaccount" id="closeaccount">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Full Name"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="Account Number"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="Pin"><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="Email" required><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" placeholder="ID Number"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" id ='a' placeholder="Full Name*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'b' placeholder="Account Number*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'c' placeholder="Pin*"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'd' placeholder="Email*" required><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" id = 'e' placeholder="ID Number*"><br>
            
            <label for="" class="confirmation" id="confirmation"> </label>
             <button class="submit" onclick="submit('closeaccount')">Submit</button>
