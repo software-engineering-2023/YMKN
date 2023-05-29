@@ -122,58 +122,7 @@ let client2 = document.getElementById('name22').value
     }
   }
 
-  // const ViewLeft = () =>{
-  //   let client5 = document.getElementById('open').value
 
-  //   if (!client5) {
-  //     return
-  //   }     
-  //   else if (client5 == '125882522, Clara') {
-  //     document.getElementById("openaccount").style.display = "block";
-  //     let blur = document.getElementById("blur");
-  //     blur.classList.toggle("active");
-
-  //   }
-  //   else if  (client5 = '252132455, Nada'){
-  //     document.getElementById("openaccount2").style.display = "block";
-  //     let blur2 = document.getElementById("blur");
-  //     blur2.classList.toggle("active");
-
-  //   }
-
-  // }
-    
-        
-
-    // var activateopen = () => {
-    
-    //     document.getElementById("openaccount").style.display = "block";
-    //     let blur = document.getElementById("blur");
-    //     blur.classList.toggle3
-        
-    //     ("active");
-    // }
-    
-    // var deactivateopen = () => {
-    
-    //     document.getElementById("openaccount").style.display = "none";
-    //     let blur = document.getElementById("blur");
-    //     blur.classList.toggle("active");
-    // }
-    
-    // var activateclose = () => {
-    
-    //     document.getElementById("closeaccount").style.display = "block";
-    //     let blur = document.getElementById("blur");
-    //     blur.classList.toggle("active");
-    // }
-    
-    // var deactivateclose = () => {
-    
-    //     document.getElementById("closeaccount").style.display = "none";
-    //     let blur = document.getElementById("blur");
-    //     blur.classList.toggle("active");
-    // }
     
     var submit = (type) =>{
     if (type === 'closeaccount') {
@@ -203,6 +152,8 @@ let client2 = document.getElementById('name22').value
 }
     
     }
+
+
             
         
       
