@@ -22,7 +22,7 @@ var login = () => {
   } else if (username === "banker" && password === "banker") {
     window.location.href = "../Banker/index.html";
   } else if (username === "admin" && password === "admin") {
-    window.location.href = "../Admin/index.htm";
+    window.location.href = "../Admin/index.html";
   } else {
     document.getElementById("loginerror").innerText = "Invalid Credentials!";
   }
