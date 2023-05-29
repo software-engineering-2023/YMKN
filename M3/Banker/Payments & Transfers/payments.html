@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolt</title>
     <link rel="stylesheet" href="/Banker/Payments & Transfers/payments.css">
-<script src="payments.js"></script>
+<script src="/Banker/Payments & Transfers/payments.js"></script>
 </head>
 <body>
     <ul class="nav">
         <li><a href="/Banker/index.html" >Home</a></li>
         <li><a href="/Banker/Account Requests/Account.html" >Account Requests</a></li>
-        <li><a href="about.asp">Cards Requests</a></li>
-        <li><a href="P&T.html" class="active">Payments & Transfers</a></li>
-        <li><a href="../Loans/loans.html">Loans Requests</a></li>
-        <li><a href="../notifications/notifications.html"  >Notifications</a></li>
+        <li><a href="/Banker/Card Requests/Card.html  " >Cards Requests </a></li>
+        <li><a href="/Banker/Payments & Transfers/payments.html" class="active">Payments & Transfers</a></li>
+        <li><a href="/Banker/Loan Requests/Loan.html">Loans Requests</a></li>
+        <li><a href="/Banker/Notifictions/notifications.html"  >Notifications</a></li>
+        <li><a href="/Banker/Report issues/Report.html"  >Report Issues</a></li>
       </ul>
      
       
       <div class="internalapplication" id="internalapplication">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Full Name"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Account Number"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" placeholder="Account Pin" required><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" placeholder="Destination Account "><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Transfer Amount "><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Full Name" id= "fullName"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Account Number" id ="accno"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" placeholder="Account Pin" id="pin"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" placeholder="Destination Account " id="Dacc"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Transfer Amount " id="TA"><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <textarea name="message" id="message" cols="40" rows="10" placeholder=""> Transfer Description</textarea>
 
        
@@ -35,12 +36,12 @@
     </div>
 
     <div class="domesticapplication" id="domesticapplication">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Full Name"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Account Number"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" placeholder="Account Pin" required><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Destination Bank "><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" placeholder="Destination Account "><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Transfer Amount "><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Full Name" id= "fullName"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Account Number" id ="accno"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" placeholder="Account Pin" id="pin"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Destination Bank " id="DB" ><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" placeholder="Destination Account " id="Dacc"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Transfer Amount "  id="TA"><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <textarea name="message" id="message" cols="40" rows="8" placeholder=""> Transfer Description</textarea>
 
        
@@ -51,13 +52,13 @@
     </div>
 
     <div class="internationalapplication" id="internationalapplication">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Full Name"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Account Number"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" placeholder="Account Pin" required><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Destination Country "><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Destination Bank "><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" placeholder="Destination Account "><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Transfer Amount "><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Full Name" id= "fullName"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Account Number" id ="accno"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="password" placeholder="Account Pin" id="pin"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Destination Country " id = DC><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" placeholder="Destination Bank " id="DB"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" placeholder="Destination Account " id ="Dacc"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="number" placeholder="Transfer Amount " id = "TA"><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <textarea name="message" id="message" cols="40" rows="6" placeholder=""> Transfer Description...</textarea>
 
        
@@ -103,6 +104,7 @@
                 <br>
                 <button class="closebutton" type="button" onclick="viewtransactions()"> View transfers <br> & Transcations</button> 
                 <button class="openbutton" type="button" onclick ="viewpayments()"  >View payments</button>  
+
                 
           
             
